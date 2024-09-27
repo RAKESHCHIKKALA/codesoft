@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Landing Page</title>
+    <link rel="stylesheet" href="landing page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AutoHub</div>
+            <ul class="nav-links">
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Signup</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect Car</h1>
+            <p>Explore our collection of the latest and greatest automobiles.</p>
+            <button class="hero-btn">Browse Cars</button>
+        </div>
+    </section>
+
+    <section id="cars" class="car-section">
+        <h2>Our Cars</h2>
+        <div class="car-cards">
+            <!-- First Row -->
+            <a  class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar-ROXX/8438/1723692413550/front-left-side-47.jpg?tr=w-300" alt="Car 1">
+                <h3>mahindra thor roxx</h3>
+                <p class="price">Rs12.99 - 22.49 Lakh*</p>
+            </a>
+            <a href="car2.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Mahindra/Thar/10745/1697697308167/front-left-side-47.jpg?tr=w-300" alt="Car 2">
+                <h3>Mahindra thar</h3>
+                <p class="price">Rs11.35 - 17.60 Lakh*</p>
+            </a>
+            <a href="car3.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Curvv/9578/1723033064164/front-left-side-47.jpg?tr=w-300" alt="Car 3">
+                <h3>Tata curvv</h3>
+                <p class="price">Rs10 - 19 Lakh*</p>
+            </a>
+
+            <!-- Second Row -->
+            <a href="car4.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/MG/Astor/11413/1719383205969/front-left-side-47.jpg?tr=w-300" alt="Car 4">
+                <h3>MG Astor Select BLACKSTORM CVT</h3>
+                <p class="price">Rs14.46 Lakh*</p>
+            </a>
+            <a href="car5.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Tata/Curvv-EV/8935/1723089608373/front-left-side-47.jpg?tr=w-300" alt="Car 5">
+                <h3>Tata curvv ev</h3>
+                <p class="price">Rs17.49 - 21.99 Lakh*</p>
+            </a>
+            <a href="car6.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/car-images/large/Hyundai/Grand-i10/7715/1585640597453/front-left-side-47.jpg?tr=w-300" alt="Car 6">
+                <h3>Hundai grand i10</h3>
+                <p class="price">Starting @ Rs 2.50 Lakh</p>
+            </a>
+
+            <!-- Third Row -->
+            <a href="car7.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/car-images/large/Maruti/Swift-Dzire/10243/1686044271945/front-left-side-47.jpg?tr=w-300" alt="Car 7">
+                <h3>maruthi swift dzire</h3>
+                <p class="price">Starting @ Rs 1.10 Lakh</p>
+            </a>
+            <a href="car8.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Maruti/Baleno/10497/1697697558001/front-left-side-47.jpg?tr=w-300" alt="Car 8">
+                <h3>maruthi Baleno</h3>
+                <p class="price">Rs6.66 - 9.83 Lakh*</p>
+            </a>
+            <a href="car9.html" class="car-card">
+                <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg?tr=w-300" alt="Car 9">
+                <h3>Tayota Innova-Crysta</h3>
+                <p class="price">Rs19.99 - 26.30 Lakh*</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> 123 Auto Street, Car City, CA 94016</p>
+            <p><strong>Phone:</strong> 456-7890</p>
+            <p><strong>Email:</strong> autohub@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AutoHub. All rights reserved.</p>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Filter Your Car</h2>
+            <form>
+                <label for="car-type">Select Car Type:</label>
+                <select id="car-type" name="car-type">
+                    <option value="suv">SUV</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="hatchback">Hatchback</option>
+                    <option value="sports">Sports</option>
+                </select>
+
+                <label for="budget">Select Budget:</label>
+                <select id="budget" name="budget">
+                    <option value="20000">Up to $20,000</option>
+                    <option value="30000">Up to $30,000</option>
+                    <option value="40000">Up to $40,000</option>
+                    <option value="50000">Up to $50,000</option>
+                </select>
+
+                <button type="submit" class="filter-btn">Apply Filters</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
